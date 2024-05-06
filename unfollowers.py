@@ -1,5 +1,19 @@
 import json
 
+#modify content of the followers_1.json file to fix the format
+lines = []
+with open("followers_1.json", "r") as file:
+    lines = file.readlines()
+
+# Open the same file in write mode to overwrite its content
+with open("followers.json", "w") as file:
+    file.write("{")
+    file.write('"relationships_followers":')
+    file.writelines(lines)
+    file.write("}")
+
+
+
 # get information from followers file
 with open('followers.json') as f:  
     follower = json.load(f) 
@@ -38,7 +52,7 @@ for _ in range(len(following_list)):
         dont_follow_back_url.append(following_list_url[_])
 
 for _ in range(len(dont_follow_back)):
-  print(dont_follow_back[_] + " | " + dont_follow_back_url[_])
+  print(dont_follow_back[_], " | ", dont_follow_back_url[_])
 try:
   os.remove("list.txt")
 except:
