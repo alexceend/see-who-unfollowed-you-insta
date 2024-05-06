@@ -32,7 +32,7 @@ After some minutes you will get an email with a download link. Download it and e
 Inside the connections/followers_and_followers folder there will be two files we'll need for the process: followers.json and following.json
 
 > [!WARNING]
-> In case followers.json is named followers_1.json you MUST name it followers.json
+> In case followers.json is named followers_1.json you MUST rename it followers.json
 
 > [!WARNING]
 > followers.json archive is not well formated so we must do some changes.
