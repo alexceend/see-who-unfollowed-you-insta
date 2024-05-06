@@ -48,8 +48,13 @@ Inside the connections/followers_and_followers folder there will be two files we
 > 3rd At the end of the file we MUST add this: }
 
 Then download the python script of this repository (unfollowers.py) and move it to the followers_and_following folder (The same directory as following.json and followers.json)
+
+```bash
+git clone https://github.com/alexceend/see-who-unfollowed-you-insta.git
+```
+
 Finally open a command prompt in the folder and execute the following command:
-```python
+```bash
 python unfollowers.py
 ```
 A file named list.txt will be created containing the users who dont follow you back on insta
