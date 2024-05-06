@@ -35,11 +35,16 @@ Inside the connections/followers_and_followers folder there will be two files we
 > In case followers.json is named followers_1.json you MUST name it followers.json
 
 > [!WARNING]
-> followers.json archive is not well formated so we must do some changes.\n
-> 1st Open the followers.json file\n
-> 2nd At the top of the file we MUST add the following text:\n
-> {\n
-> "relationships_followers":\n
+> followers.json archive is not well formated so we must do some changes.
+> 
+> 1st Open the followers.json file
+> 
+> 2nd At the top of the file we MUST add the following text:
+> 
+> {
+> 
+> "relationships_followers":
+> 
 > 3rd At the end of the file we MUST add this: }
 
 Then download the python script of this repository (unfollowers.py) and move it to the followers_and_following folder (The same directory as following.json and followers.json)
